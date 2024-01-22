@@ -46,5 +46,9 @@ while is_active:
         ball.reset_position()
         score.r_point()
 
+    if score.r_score >= 10 or score.l_score >= 10:
+        print(score.check_winner())
+        is_active = False
+
 
 screen.exitonclick()
